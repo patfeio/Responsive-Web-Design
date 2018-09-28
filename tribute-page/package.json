@@ -1,0 +1,20 @@
+{
+  "name": "tribute-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "build:css": "npm run scss && npm run autoprefixer"
+  },
+  "author": "Patricia Feio",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "postcss-cli": "^6.0.0"
+  }
+}
