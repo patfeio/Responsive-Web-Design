@@ -10,7 +10,6 @@
   "author": "Patricia Feio",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^9.1.5",
     "node-sass": "^4.9.3"
   },
   "devDependencies": {
