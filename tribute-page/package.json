@@ -10,10 +10,10 @@
   "author": "Patricia Feio",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.9.3",
-    "onchange": "^4.1.0"
+    "node-sass": "^4.9.3"
   },
   "devDependencies": {
+    "onchange": "^4.1.0",
     "postcss-cli": "^6.0.0",
     "watch": "^1.0.2"
   }
