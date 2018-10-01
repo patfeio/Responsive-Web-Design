@@ -1,0 +1,19 @@
+{
+  "name": "survey-form",
+  "version": "1.0.0",
+  "description": "Survey-form responsive web design freeCodeCamp project",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss -o dist/css/ --recursive",
+    "watch": "onchange scss -- npm run scss"
+  },
+  "author": "Patricia Feio",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "onchange": "^5.0.0",
+    "watch": "^1.0.2"
+  }
+}
