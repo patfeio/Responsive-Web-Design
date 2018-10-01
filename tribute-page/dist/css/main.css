@@ -28,12 +28,14 @@ footer {
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -41,22 +43,39 @@ html {
   background: #313131;
   color: #fafafa;
   font-family: Lato, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .img-div {
   background: rgba(248, 248, 248, 0.9);
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: 20px;
   text-align: center;
 }
 
 .img-div__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -65,6 +84,7 @@ html {
   font-size: 3.25rem;
   font-weight: 900;
   padding: 20px 10px;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
@@ -72,18 +92,27 @@ html {
   color: #313131;
   font-size: 1.5rem;
   padding: 0 10px 20px 10px;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
 .img-div__figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .img-div__src {
   background: rgba(248, 248, 248, 0.9);
   border-radius: 5px;
+  -ms-flex-item-align: center;
   align-self: center;
   max-width: 90%;
 }
@@ -92,19 +121,32 @@ html {
   color: #313131;
   font-size: 1rem;
   padding: 20px;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
 .tribute-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 60px 10px;
   line-height: 1.6;
 }
 
 .tribute-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   line-height: 1.8;
   list-style-type: none;
@@ -141,6 +183,7 @@ html {
   line-height: 1.6;
   margin: 40px 10px 20px 10px;
   max-width: 550px;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
@@ -155,6 +198,7 @@ html {
 .cite {
   font-size: 1rem;
   margin-left: 10px;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
@@ -162,6 +206,7 @@ html {
   font-size: 1.125rem;
   margin: 60px 10px 20px 10px;
   max-width: 700px;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
@@ -169,5 +214,6 @@ html {
   margin-bottom: 10px;
   margin-top: 30px;
   font-size: 1rem;
+  -ms-flex-item-align: center;
   align-self: center;
 }
