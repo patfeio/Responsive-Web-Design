@@ -4,17 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
-    "build:css": "npm run scss && npm run autoprefixer"
+    "scss": "node-sass -w scss -o dist/css/ --recursive",
+    "watch": "onchange scss -- npm run scss"
   },
   "author": "Patricia Feio",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "onchange": "^4.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "postcss-cli": "^6.0.0"
+    "postcss-cli": "^6.0.0",
+    "watch": "^1.0.2"
   }
 }
