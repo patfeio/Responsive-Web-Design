@@ -6,51 +6,51 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Survey Form</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 	<div class="main">
 
-		<form id="survey-form" method="get" target="_blank" action="#">
+		<form class="survey-form" method="get" target="_blank" action="#">
 
-			<h1 id="title">Survey Form</h1>
+			<h1 class="survey-form__title">Survey Form</h1>
 
-			<p id="description">How do you use public transports?</p>
+			<p class="survey-form__description">How do you use public transports?</p>
 
-			<div id="row">
-				<div class="label">
-					<label id="name-label" for="name">Name:</label>
+			<div class="row">
+				<div class="row__label">
+					<label for="name">Name:</label>
 				</div>
-				<div class="box">
-					<input id="name" type="text" placeholder="Insert your name" required>
-				</div>
-			</div>
-
-			<div id="row">
-				<div class="label">
-					<label id="email-label" for="email">Email:</label>
-				</div>
-				<div class="box">
-					<input id="email" type="email" placeholder="Insert your email" required>
+				<div class="row__box">
+					<input class="row__box__name" type="text" placeholder="Insert your name" required>
 				</div>
 			</div>
 
-			<div id="row">
-				<div class="label">
-					<label id="number-label" for="number">Your age:</label>
+			<div class="row">
+				<div class="row__label">
+					<label for="email">Email:</label>
 				</div>
-				<div class="box">
-					<input id="number" type="number" placeholder="Select" min="1" max="100" required>
+				<div class="row__box">
+					<input class="row__box__email" type="email" placeholder="Insert your email" required>
 				</div>
 			</div>
 
-			<div id="row">
-				<div id="label-dropdown" class="label">
+			<div class="row">
+				<div class="row__label">
+					<label for="number">Your age:</label>
+				</div>
+				<div class="row__box">
+					<input class="row__box__number" type="number" placeholder="Select" min="1" max="100" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="row__label-dropdown">
 					<label for="dropdown">Which option best describes your current situation?</label>
 				</div>
-				<div class="box">
-					<select id="dropdown">
+				<div class="row__box">
+					<select class="row__box__dropdown">
 						<option value="full-time-job">Full Time Job</option>
 						<option value="full-time-learner">Full Time Learner</option>
 						<option value="student">Student</option>
@@ -61,20 +61,20 @@
 				</div>
 			</div>
 
-			<div id="row">
+			<div class="row">
 
-				<div class="label">
+				<div class="row__label">
 					<label for="transports">Do you own a car?</label>
 				</div>
 
-				<div class="box select-box">
+				<div class="row__box row__select-box">
 
-					<div id="div-radio-button">
+					<div class="row__box-radio-button">
 						<input type="radio" name="car" value="yes">
 					</div>
 					<div>Yes</div>
 
-					<div id="div-radio-button">
+					<div class="row__box-radio-button">
 						<input type="radio" name="car" value="no">
 					</div>
 					<div>No</div>
@@ -82,50 +82,50 @@
 				</div>
 			</div>
 
-			<div id="row">
+			<div class="row">
 
-				<div class="label">
+				<div class="row__label">
 					<label for="transports">What are your daily means of transportation?</label>
 				</div>
 
-				<div class="box select-box">
+				<div class="row__box select-box">
 
-					<div id="div-checkbox">
+					<div class="row__box-checkbox">
 						<input type="checkbox" name="vehicle" value="bike">
 					</div>
 					<div>Bike</div>
 
-					<div id="div-checkbox">
+					<div class="row__box-checkbox">
 						<input type="checkbox" name="vehicle" value="boat">
 					</div>
 					<div>Boat</div>
 
-					<div id="div-checkbox">
+					<div class="row__box-checkbox">
 						<input type="checkbox" name="vehicle" value="bus">
 					</div>
 					<div>Bus</div>
 
-					<div id="div-checkbox">
+					<div class="row__box-checkbox">
 						<input type="checkbox" name="vehicle" value="car">
 					</div>
 					<div>Car</div>
 
-					<div id="div-checkbox">
+					<div class="row__box-checkbox">
 						<input type="checkbox" name="vehicle" value="subway">
 					</div>
 					<div>Subway</div>
 
-					<div id="div-checkbox">
+					<div class="row__box-checkbox">
 						<input type="checkbox" name="vehicle" value="train">
 					</div>
 					<div>Train</div>
 
-					<div id="div-checkbox">
+					<div class="row__box-checkbox">
 						<input type="checkbox" name="vehicle" value="tram">
 					</div>
 					<div>Tram</div>
 
-					<div id="div-checkbox">
+					<div class="row__box-checkbox">
 						<input type="checkbox" name="vehicle" value="walk">
 					</div>
 					<div>Walking</div>
@@ -133,23 +133,23 @@
 				</div>
 			</div>
 
-			<div id="row">
+			<div class="row">
 
-				<div class="label">
+				<div class="row__label">
 					<label for="comments">Any comments or suggestions?</label>
 				</div>
 
-				<div class="box">
-					<textarea id="comments">Your comments here</textarea>
+				<div class="row__box">
+					<textarea class="row__box__comments">Your comments here</textarea>
 				</div>
 
 			</div>
 
-			<button id="submit" type="submit" value="submit">Submit</button>
+			<button class="btn-submit" type="submit" value="submit">Submit</button>
 
 		</form>
 
-		<footer>
+		<footer class="footer">
 			<p>Written and coded with &#x2764; by Patrícia Feio</p>
 		</footer>
 

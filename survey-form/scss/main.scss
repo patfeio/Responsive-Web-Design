@@ -1,0 +1,173 @@
+$fontColor: #191919;
+$formBackgroundColor: #fff;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro');
+
+@mixin rowBoxInput {
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+
+html,
+body,
+div,
+h1,
+p,
+img,
+ul,
+li,
+footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    color: $fontColor;
+    min-width: 320px;
+    text-align: center;
+    background: url("../road-intersection.jpeg") no-repeat;
+}
+
+.main {
+    width: 75%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.survey-form {
+    background: $formBackgroundColor;
+    margin: 20px 0px;
+    padding: 0 60px;
+    box-shadow: 1px 1px 3px 1px grey;
+
+    &__title {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 2.25em;
+        font-weight: 900;
+        padding-top: 30px;
+    }
+
+    &__description {
+        padding-top: 10px;
+    }
+
+}
+
+.row {
+    margin: 40px 0;
+
+    &__label {
+        display: inline-block;
+        text-align: right;
+        width: 40%;
+        padding-right: 15px;
+        vertical-align: middle;
+    }
+
+    &__label-dropdown {
+        display: inline-block;
+        text-align: right;
+        width: 40%;
+        padding-right: 15px;
+        vertical-align: middle;
+    }
+
+    &__box {
+        display: inline-block;
+        width: 48%;
+        text-align: left;
+
+        &__name {
+            @include rowBoxInput;
+        }
+
+        &__email {
+            @include rowBoxInput;
+        }
+
+        &__number {
+            @include rowBoxInput;
+        }
+
+        &__dropdown {
+            width: 300px;
+            height: 30px;
+            border-radius: 3px;
+            border: 1px solid grey;
+        }
+
+        &-radio-button {
+            float: left;
+            margin-right: 5px;
+        }
+
+        &-checkbox {
+            float: left;
+            margin-right: 5px;
+        }
+
+        &__comments {
+            width: 300px;
+            height: 100px;
+            border-radius: 3px;
+            border: 1px solid grey;
+            vertical-align: top;
+            padding: 5px 0 0 5px;
+        }
+    }
+
+    &__select-box {
+        vertical-align: top;
+    }
+}
+
+input[type="radio"i] {
+    display: block;
+}
+
+input[type="checkbox"i] {
+    display: block;
+}
+
+input[placeholder] {
+    padding-left: 5px;
+}
+
+.btn-submit {
+    padding: 10px 25px;
+    margin-bottom: 30px;
+    font-size: 1.125em;
+    font-weight: 600;
+    border-radius: 3px;
+    background: #c9c6b6;
+    box-shadow: 1px 1px 3px 1px grey;
+
+    &:hover {
+        font-weight: 700;
+        background: white;
+        box-shadow: 1px 1px 3px 0px grey;
+    }
+}
+
+.footer {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
