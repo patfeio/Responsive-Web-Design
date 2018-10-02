@@ -33,7 +33,8 @@
                 Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of
                 its environment to provide programmatic control over them.</p>
 
-            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+            <p>JavaScript contains a standard library of objects, such as <span>Array</span>, <span>Date</span>, and
+                <span>Math</span>, and a core set of
                 language elements such as operators, control structures, and statements. Core JavaScript can be
                 extended for a variety of purposes by supplementing it with additional objects; for example:</p>
 
@@ -53,6 +54,8 @@
             <p>This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise,
                 Node.js JavaScript on the server can respond to custom requests from code written in the browser.</p>
         </section>
+
+        <hr>
 
         <section id="JavaScript_and_Java" class="main-section">
             <header>JavaScript and Java</header>
@@ -87,16 +90,17 @@
                 creation.</p>
 
             <h2>JavaScript compared to Java</h2>
+
+            <h3>JavaScript:</h3>
             <ul>
-                <li>JavaScript:</li>
                 <li>Object-oriented. No distinction between types of objects. Inheritance is through the prototype
                     mechanism, and properties and methods can be added to any object dynamically.</li>
                 <li>Variable data types are not declared (dynamic typing, loosely typed).</li>
                 <li>Cannot automatically write to hard disk.</li>
             </ul>
 
+            <h3>Java:</h3>
             <ul>
-                <li>Java:</li>
                 <li>Class-based. Objects are divided into classes and instances with all inheritance through the class
                     hierarchy. Classes and instances cannot have properties or methods added dynamically.</li>
                 <li>Variable data types must be declared (static typing, strongly typed)</li>
@@ -106,6 +110,8 @@
             <p>For more information on the differences between JavaScript and Java, see the chapter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model">Details
                     of the object model</a>.</p>
         </section>
+
+        <hr>
 
         <section id="ECMAcript" class="main-section">
             <header>ECMAcript</header>
@@ -133,7 +139,7 @@
                 the different technologies that are used when programming with JavaScript, consult the article <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview">
                     JavaScript technologies overview </a>.</p>
 
-            <h1>JavaScript documentation versus the ECMAScript specification</h1>
+            <h2>JavaScript documentation versus the ECMAScript specification</h2>
 
             <p>The ECMAScript specification is a set of requirements for implementing ECMAScript; it is useful if you
                 want to implement standards-compliant language features in your ECMAScript implementation or engine
@@ -150,6 +156,8 @@
                 programmer.</p>
         </section>
 
+        <hr>
+
         <section id="Tools" class="main-section">
             <header>Tools</header>
 
@@ -160,7 +168,7 @@
             <p>There are two tools built into Firefox that are useful for experimenting with JavaScript: the Web
                 Console and Scratchpad.</p>
 
-            <h1>The Web Console</h1>
+            <h2>The Web Console</h2>
             <p>The <a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console">Web Console</a> shows you
                 information about the currently loaded Web page, and also includes a command
                 line that you can use to execute JavaScript expressions in the current page.</p>
@@ -178,13 +186,13 @@
                 surrounded by console.log around eval like so.</p>
 
             <pre>
-                    <code>
+                <code>
                         function greetMe(yourName) {
                             alert('Hello ' + yourName);
                         }
                         console.log(eval('3 + 5'));
-                    </code>
-                </pre>
+                </code>
+            </pre>
 
             <h2>Scratchpad</h2>
             <p>The Web Console is great for executing single lines of JavaScript, but although you can execute multiple
@@ -200,6 +208,8 @@
             <img src="img/scratchpad.png">
 
         </section>
+
+        <hr>
 
         <section id="Hello_World" class="main-section">
             <header>Hello World</header>
@@ -220,7 +230,7 @@
                             /* End of your code */
                         })();
                     </code>
-                </pre>
+            </pre>
 
             <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! In the following pages,
                 this guide will introduce you to the JavaScript syntax and language features, so that you will be able
@@ -237,13 +247,16 @@
 
         </section>
 
+        <hr>
+
         <section id="Basic_syntax_and_comments" class="main-section">
             <header>Basic syntax and comments</header>
 
-            <h1>Basics</h1>
+            <h2>Basics</h2>
             <p>JavaScript borrows most of its syntax from Java, but is also influenced by Awk, Perl and Python.</p>
 
-            <p>JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means
+            <p>JavaScript is <span>case-sensitive</span> and uses the <span>Unicode</span> character set. For example,
+                the word Früh (which means
                 "early" in German) could be used as a variable name.</p>
 
             <pre>
@@ -270,7 +283,7 @@
                 tabs, and newline characters are considered whitespace.</p>
 
             <h1>Comments</h1>
-            <p>The syntax of comments is the same as in C++ and in many other languages:</p>
+            <p>The syntax of <span>comments</span> is the same as in C++ and in many other languages:</p>
 
             <pre>
                 <code>
