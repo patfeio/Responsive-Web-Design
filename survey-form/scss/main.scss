@@ -1,15 +1,41 @@
 $fontColor: #191919;
 $formBackgroundColor: #fff;
+$borderColor: #808080;
+$footerFontColor: #4b4a4a;
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro');
+@import url("https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro");
 
 @mixin rowBoxInput {
     width: 300px;
     height: 30px;
     border-radius: 3px;
-    border: 1px solid grey;
+    border: 1px solid $borderColor;
 }
 
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 525px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==tablet {
+        @media (max-width: 968px) {
+            @content;
+        }
+    }
+}
+
+@mixin breakpointPhone {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+@mixin breakpointTablet {
+    width: 200px;
+    height: 30px;
+}
 
 html,
 body,
@@ -38,29 +64,33 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
     color: $fontColor;
     min-width: 320px;
     text-align: center;
-    background: url("../road-intersection.jpeg") no-repeat;
+    background: url("../background-photo-unsplash.jpg") no-repeat;
 }
 
 .main {
     width: 75%;
     max-width: 900px;
     margin: 0 auto;
+
+    @include breakpoint(tablet) {
+        width: 85%;
+    }
 }
 
 .survey-form {
     background: $formBackgroundColor;
     margin: 20px 0px;
     padding: 0 60px;
-    box-shadow: 1px 1px 3px 1px grey;
+    box-shadow: 1px 1px 3px 1px $borderColor;
 
     &__title {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 2.25em;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 2.25rem;
         font-weight: 900;
         padding-top: 30px;
     }
@@ -69,6 +99,9 @@ body {
         padding-top: 10px;
     }
 
+    @include breakpoint(phone) {
+        @include breakpointPhone;
+    }
 }
 
 .row {
@@ -80,14 +113,10 @@ body {
         width: 40%;
         padding-right: 15px;
         vertical-align: middle;
-    }
 
-    &__label-dropdown {
-        display: inline-block;
-        text-align: right;
-        width: 40%;
-        padding-right: 15px;
-        vertical-align: middle;
+        @include breakpoint(phone) {
+            @include breakpointPhone;
+        }
     }
 
     &__box {
@@ -97,21 +126,37 @@ body {
 
         &__name {
             @include rowBoxInput;
+
+            @include breakpoint(tablet) {
+                @include breakpointTablet;
+            }
         }
 
         &__email {
             @include rowBoxInput;
+
+            @include breakpoint(tablet) {
+                @include breakpointTablet;
+            }
         }
 
         &__number {
             @include rowBoxInput;
+
+            @include breakpoint(tablet) {
+                @include breakpointTablet;
+            }
         }
 
         &__dropdown {
             width: 300px;
             height: 30px;
             border-radius: 3px;
-            border: 1px solid grey;
+            border: 1px solid $borderColor;
+
+            @include breakpoint(tablet) {
+                @include breakpointTablet;
+            }
         }
 
         &-radio-button {
@@ -128,14 +173,28 @@ body {
             width: 300px;
             height: 100px;
             border-radius: 3px;
-            border: 1px solid grey;
+            border: 1px solid $borderColor;
             vertical-align: top;
             padding: 5px 0 0 5px;
+
+            @include breakpoint(tablet) {
+                width: 200px;
+                height: 100px;
+            }
+        }
+
+        @include breakpoint(phone) {
+            @include breakpointPhone;
+            padding-top: 10px;
         }
     }
 
     &__select-box {
         vertical-align: top;
+    }
+
+    @include breakpoint(phone) {
+        @include breakpointPhone;
     }
 }
 
@@ -152,22 +211,24 @@ input[placeholder] {
 }
 
 .btn-submit {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
     padding: 10px 25px;
     margin-bottom: 30px;
-    font-size: 1.125em;
-    font-weight: 600;
     border-radius: 3px;
-    background: #c9c6b6;
-    box-shadow: 1px 1px 3px 1px grey;
+    box-shadow: 1px 1px 3px 1px $borderColor;
 
     &:hover {
         font-weight: 700;
-        background: white;
-        box-shadow: 1px 1px 3px 0px grey;
+        background: $formBackgroundColor;
+        box-shadow: 1px 1px 3px 0px $borderColor;
     }
 }
 
 .footer {
-    margin-bottom: 5px;
+    color: $footerFontColor;
+    font-size: 0.875rem;
     font-weight: 600;
+    padding-bottom: 10px;
 }

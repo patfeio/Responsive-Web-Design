@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro");
+
 html,
 body,
 div,
@@ -12,118 +13,226 @@ footer {
   padding: 0;
   border: 0;
   font-size: 100%;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   color: #191919;
   min-width: 320px;
   text-align: center;
-  background: url("../road-intersection.jpeg") no-repeat; }
+  background: url("../background-photo-unsplash.jpg") no-repeat;
+}
 
 .main {
   width: 75%;
   max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
+
+@media (max-width: 968px) {
+  .main {
+    width: 85%;
+  }
+}
 
 .survey-form {
   background: #fff;
   margin: 20px 0px;
   padding: 0 60px;
-  box-shadow: 1px 1px 3px 1px grey; }
-  .survey-form__title {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.25em;
-    font-weight: 900;
-    padding-top: 30px; }
-  .survey-form__description {
-    padding-top: 10px; }
+  box-shadow: 1px 1px 3px 1px #808080;
+}
+
+.survey-form__title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 900;
+  padding-top: 30px;
+}
+
+.survey-form__description {
+  padding-top: 10px;
+}
+
+@media (max-width: 525px) {
+  .survey-form {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 
 .row {
-  margin: 40px 0; }
+  margin: 40px 0;
+}
+
+.row__label {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding-right: 15px;
+  vertical-align: middle;
+}
+
+@media (max-width: 525px) {
   .row__label {
-    display: inline-block;
-    text-align: right;
-    width: 40%;
-    padding-right: 15px;
-    vertical-align: middle; }
-  .row__label-dropdown {
-    display: inline-block;
-    text-align: right;
-    width: 40%;
-    padding-right: 15px;
-    vertical-align: middle; }
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.row__box {
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+}
+
+.row__box__name {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #808080;
+}
+
+@media (max-width: 968px) {
+  .row__box__name {
+    width: 200px;
+    height: 30px;
+  }
+}
+
+.row__box__email {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #808080;
+}
+
+@media (max-width: 968px) {
+  .row__box__email {
+    width: 200px;
+    height: 30px;
+  }
+}
+
+.row__box__number {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #808080;
+}
+
+@media (max-width: 968px) {
+  .row__box__number {
+    width: 200px;
+    height: 30px;
+  }
+}
+
+.row__box__dropdown {
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #808080;
+}
+
+@media (max-width: 968px) {
+  .row__box__dropdown {
+    width: 200px;
+    height: 30px;
+  }
+}
+
+.row__box-radio-button {
+  float: left;
+  margin-right: 5px;
+}
+
+.row__box-checkbox {
+  float: left;
+  margin-right: 5px;
+}
+
+.row__box__comments {
+  width: 300px;
+  height: 100px;
+  border-radius: 3px;
+  border: 1px solid #808080;
+  vertical-align: top;
+  padding: 5px 0 0 5px;
+}
+
+@media (max-width: 968px) {
+  .row__box__comments {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 525px) {
   .row__box {
-    display: inline-block;
-    width: 48%;
-    text-align: left; }
-    .row__box__name {
-      width: 300px;
-      height: 30px;
-      border-radius: 3px;
-      border: 1px solid grey; }
-    .row__box__email {
-      width: 300px;
-      height: 30px;
-      border-radius: 3px;
-      border: 1px solid grey; }
-    .row__box__number {
-      width: 300px;
-      height: 30px;
-      border-radius: 3px;
-      border: 1px solid grey; }
-    .row__box__dropdown {
-      width: 300px;
-      height: 30px;
-      border-radius: 3px;
-      border: 1px solid grey; }
-    .row__box-radio-button {
-      float: left;
-      margin-right: 5px; }
-    .row__box-checkbox {
-      float: left;
-      margin-right: 5px; }
-    .row__box__comments {
-      width: 300px;
-      height: 100px;
-      border-radius: 3px;
-      border: 1px solid grey;
-      vertical-align: top;
-      padding: 5px 0 0 5px; }
-  .row__select-box {
-    vertical-align: top; }
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
+  }
+}
 
-input[type="radio" i] {
-  display: block; }
+.row__select-box {
+  vertical-align: top;
+}
 
-input[type="checkbox" i] {
-  display: block; }
+@media (max-width: 525px) {
+  .row {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+input[type="radio"i] {
+  display: block;
+}
+
+input[type="checkbox"i] {
+  display: block;
+}
 
 input[placeholder] {
-  padding-left: 5px; }
+  padding-left: 5px;
+}
 
 .btn-submit {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
   padding: 10px 25px;
   margin-bottom: 30px;
-  font-size: 1.125em;
-  font-weight: 600;
   border-radius: 3px;
-  background: #c9c6b6;
-  box-shadow: 1px 1px 3px 1px grey; }
-  .btn-submit:hover {
-    font-weight: 700;
-    background: white;
-    box-shadow: 1px 1px 3px 0px grey; }
+  box-shadow: 1px 1px 3px 1px #808080;
+}
+
+.btn-submit:hover {
+  font-weight: 700;
+  background: #fff;
+  box-shadow: 1px 1px 3px 0px #808080;
+}
 
 .footer {
-  margin-bottom: 5px;
-  font-weight: 600; }
+  color: #4b4a4a;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
