@@ -17,12 +17,14 @@ footer {
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -51,6 +53,7 @@ body {
   background: #fff;
   margin: 20px 0px;
   padding: 0 60px;
+  -webkit-box-shadow: 1px 1px 3px 1px #808080;
   box-shadow: 1px 1px 3px 1px #808080;
 }
 
@@ -221,12 +224,14 @@ input[placeholder] {
   padding: 10px 25px;
   margin-bottom: 30px;
   border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px 1px #808080;
   box-shadow: 1px 1px 3px 1px #808080;
 }
 
 .btn-submit:hover {
   font-weight: 700;
   background: #fff;
+  -webkit-box-shadow: 1px 1px 3px 0px #808080;
   box-shadow: 1px 1px 3px 0px #808080;
 }
 
