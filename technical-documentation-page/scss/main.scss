@@ -1,3 +1,109 @@
+$fontColor: #1a1a1a;
+$borderColor: rgba(115, 115, 115, 0.6);
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+ul,
+ol,
+li,
+
+    {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 :root {
     font-size: 16px;
 }
+
+body {
+    font-family: 'Open+Sans', sans-serif;
+    color: $fontColor;
+    line-height: 1.8;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+header {
+    font-family: Nunito, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-doc {
+    height: 100%;
+    display: flex;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex: 1 1 300px;
+    position: fixed;
+    overflow-y: auto;
+    margin-top: 50px;
+    height: 100%;
+    width: 300px;
+}
+
+.nav-link {
+    margin: 30px 0;
+    color: $fontColor;
+    padding: 10px 0;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+}
+
+#sections {
+    order: 2;
+    flex: 2 2 auto;
+    /*flex-direction: column;*/
+    margin-top: 50px;
+    padding: 0 50px;
+    border-left: 2px solid $borderColor;
+    margin-left: 300px;
+}
+
+.main-section__list {
+    margin: 0 200px 0 50px;
+}
+
+.h-rule {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Smartphones */
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {}
