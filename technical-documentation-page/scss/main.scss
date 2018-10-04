@@ -67,14 +67,6 @@ h1 {
   font-size: 2rem;
 }
 
-#main-doc {
-  display: flex;
-  width: 100vw;
-  margin: 0 auto;
-  padding: 0;
-  height: 100%;
-}
-
 #navbar {
   display: flex;
   flex-direction: column;
@@ -90,6 +82,7 @@ h1 {
     padding-top: 80px;
     width: 100%;
     height: 60vh;
+    border-right: none;
   }
 }
 
@@ -108,23 +101,35 @@ h1 {
   border-bottom: 1px solid $borderColor;
 }
 
+#main-doc {
+  display: flex;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+}
+
 #sections {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 50px 60px 50px 70px;
   margin-left: 250px;
   flex: auto;
 
   @media screen and (max-width: $break-small) {
     margin: 0 auto;
-    padding: 520px 100px 0 100px;
+    align-self: center;
+    padding: 520px 50px 0 50px;
   }
 }
 
 .main-section__list {
   margin: 0 200px 0 50px;
+
+  @media screen and (max-width: $break-small) {
+    margin: 0 auto;
+  }
 }
 
 .section-link {
