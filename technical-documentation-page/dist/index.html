@@ -16,7 +16,9 @@
 
         <nav id="navbar">
 
-            <header class="nav-header">JavaScript Guide</header>
+            <header class="nav-header">
+                <h1>JavaScript Guide</h1>
+            </header>
 
             <a href="#About_JavaScript" class="nav-link">About JavaScript</a>
             <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
@@ -24,15 +26,19 @@
             <a href="#Tools" class="nav-link">Tools</a>
             <a href="#Hello_World" class="nav-link">Hello World</a>
             <a href="#Basic_syntax_and_comments" class="nav-link">Basic syntax and comments</a>
-            <a href="#Declarations" class="nav-link">Declarations</a>
+            <a href="#Declarations" class="nav-link nav-link--border-bottom">Declarations</a>
 
         </nav>
+
+      
 
         <div id="sections">
 
             <section id="About_JavaScript" class="main-section">
 
-                <header>About JavaScript</header>
+                <header>
+                    <h1>About JavaScript</h1>
+                </header>
 
                 <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive
                     (e.x. having complex animations, clickable buttons, popup menus, etc.). There are also more
@@ -75,7 +81,9 @@
 
             <section id="JavaScript_and_Java" class="main-section">
 
-                <header>JavaScript and Java</header>
+                <header>
+                    <h1>JavaScript and Java</h1>
+                </header>
 
                 <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The
                     JavaScript
@@ -115,9 +123,9 @@
                     of their easier syntax, specialized built-in functionality, and minimal requirements for object
                     creation.</p>
 
-                <h2>JavaScript compared to Java</h2>
+                <h3>JavaScript compared to Java</h3>
 
-                <h3>JavaScript:</h3>
+                <h4>JavaScript:</h4>
                 <ul class="main-section__list">
                     <li>Object-oriented. No distinction between types of objects. Inheritance is through the prototype
                         mechanism, and properties and methods can be added to any object dynamically.</li>
@@ -125,7 +133,7 @@
                     <li>Cannot automatically write to hard disk.</li>
                 </ul>
 
-                <h3>Java:</h3>
+                <h4>Java:</h4>
                 <ul class="main-section__list">
                     <li>Class-based. Objects are divided into classes and instances with all inheritance through the
                         class
@@ -134,7 +142,8 @@
                     <li>Can automatically write to hard disk.</li>
                 </ul>
 
-                <p>For more information on the differences between JavaScript and Java, see the chapter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model">Details
+                <p>For more information on the differences between JavaScript and Java, see the chapter <a class="section-link"
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model">Details
                         of the object model</a>.</p>
 
                 <hr class="h-rule">
@@ -143,9 +152,12 @@
 
             <section id="ECMAcript" class="main-section">
 
-                <header>ECMAcript</header>
+                <header>
+                    <h1>ECMAcript</h1>
+                </header>
 
-                <p>JavaScript is standardized at <a href="http://www.ecma-international.org/"> Ecma International </a>
+                <p>JavaScript is standardized at <a class="section-link" href="http://www.ecma-international.org/">
+                        Ecma International </a>
                     —
                     the European association for standardizing
                     information and communication systems (ECMA was formerly an acronym for the European Computer
@@ -155,27 +167,30 @@
                     their
                     implementation of JavaScript. The ECMAScript standard is documented in the ECMA-262 specification.
                     See
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript"> New in
+                    <a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript">
+                        New in
                         JavaScript
                     </a> to learn more about different versions of JavaScript and ECMAScript specification
                     editions.</p>
 
-                <p>The ECMA-262 standard is also approved by the <a href="https://www.iso.org/home.html"> ISO </a>
+                <p>The ECMA-262 standard is also approved by the <a class="section-link" href="https://www.iso.org/home.html">
+                        ISO </a>
                     (International Organization for Standardization) as
-                    ISO-16262. You can also find the specification on <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+                    ISO-16262. You can also find the specification on <a class="section-link" href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
                         the Ecma International website </a>. The ECMAScript
                     specification does not describe the Document Object Model (DOM), which is standardized by the <a
-                        href="https://www.w3.org/">
+                        class="section-link" href="https://www.w3.org/">
                         World
-                        Wide Web Consortium (W3C) </a> and/or <a href="https://whatwg.org/"> WHATWG (Web Hypertext
+                        Wide Web Consortium (W3C) </a> and/or <a class="section-link" href="https://whatwg.org/">
+                        WHATWG (Web Hypertext
                         Application Technology Working Group) </a>. The DOM
                     defines the way in which HTML document objects are exposed to your script. To get a better idea
                     about
                     the different technologies that are used when programming with JavaScript, consult the article <a
-                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview">
+                        class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview">
                         JavaScript technologies overview </a>.</p>
 
-                <h1>JavaScript documentation versus the ECMAScript specification</h1>
+                <h2>JavaScript documentation versus the ECMAScript specification</h2>
 
                 <p>The ECMAScript specification is a set of requirements for implementing ECMAScript; it is useful if
                     you
@@ -199,7 +214,9 @@
 
             <section id="Tools" class="main-section">
 
-                <header>Tools</header>
+                <header>
+                    <h1>Tools</h1>
+                </header>
 
                 <p>Getting started with JavaScript is easy: all you need is a modern Web browser. This guide includes
                     some
@@ -210,8 +227,9 @@
                 <p>There are two tools built into Firefox that are useful for experimenting with JavaScript: the Web
                     Console and Scratchpad.</p>
 
-                <h1>The Web Console</h1>
-                <p>The <a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console">Web Console</a> shows you
+                <h2>The Web Console</h2>
+                <p>The <a class="section-link" href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console">Web
+                        Console</a> shows you
                     information about the currently loaded Web page, and also includes a command
                     line that you can use to execute JavaScript expressions in the current page.</p>
 
@@ -239,12 +257,12 @@
                 </code>
             </pre>
 
-                <h1>Scratchpad</h1>
+                <h2>Scratchpad</h2>
                 <p>The Web Console is great for executing single lines of JavaScript, but although you can execute
                     multiple
                     lines, it's not very convenient for that, and you can't save your code samples using the Web
                     Console.
-                    So for more complex examples <a href="https://developer.mozilla.org/en-US/docs/Tools/Scratchpad">Scratchpad</a>
+                    So for more complex examples <a class="section-link" href="https://developer.mozilla.org/en-US/docs/Tools/Scratchpad">Scratchpad</a>
                     is a better tool.</p>
 
                 <p>To open Scratchpad (<kbd>Shift</kbd>+<kbd>F4</kbd>), select "Scratchpad" from the "Developer" menu,
@@ -260,7 +278,9 @@
 
             <section id="Hello_World" class="main-section">
 
-                <header>Hello World</header>
+                <header>
+                    <h1>Hello World</h1>
+                </header>
 
                 <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
                     JavaScript code:</p>
@@ -302,7 +322,9 @@
 
             <section id="Basic_syntax_and_comments" class="main-section">
 
-                <header>Basic syntax and comments</header>
+                <header>
+                    <h1>Basic syntax and comments</h1>
+                </header>
 
                 <p>JavaScript borrows most of its syntax from Java, but is also influenced by Awk, Perl and Python.</p>
 
@@ -325,9 +347,9 @@
                     one
                     statement on a line is desired, then they must be separated by semicolons. ECMAScript also has
                     rules
-                    for automatic insertion of semicolons (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Automatic_semicolon_insertion">ASI</a>)
+                    for automatic insertion of semicolons (<a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Automatic_semicolon_insertion">ASI</a>)
                     to end statements. (For more information, see the detailed
-                    reference about JavaScript's <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar">
+                    reference about JavaScript's <a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar">
                         lexical grammar</a>.) It is considered best practice, however, to always write
                     a semicolon after a statement, even when it is not strictly needed. This practice reduces the
                     chances
@@ -363,23 +385,25 @@
 
             <section id="Declarations" class="main-section">
 
-                <header>Declarations</header>
+                <header>
+                    <h1>Declarations</h1>
+                </header>
 
                 <p>There are three kinds of declarations in JavaScript.</p>
 
-                <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var">var</a><br>
+                <p><a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var">var</a><br>
 
                     Declares a variable, optionally initializing it to a value.</p>
 
-                <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">let</a><br>
+                <p><a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">let</a><br>
 
                     Declares a block-scoped, local variable, optionally initializing it to a value.</p>
 
-                <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a><br>
+                <p><a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a><br>
 
                     Declares a block-scoped, read-only named constant.</p>
 
-                <h1>Variables</h1>
+                <h2>Variables</h2>
 
                 <p>You use variables as symbolic names for values in your application. The names of variables, called
                     identifiers, conform to certain rules.</p>
@@ -390,14 +414,15 @@
 
                 <p>You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers (for more details
                     see
-                    <a href="https://mathiasbynens.be/notes/javascript-identifiers-es6">this blog post</a>). You can
+                    <a class="section-link" href="https://mathiasbynens.be/notes/javascript-identifiers-es6">this blog
+                        post</a>). You can
                     also
-                    use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals">Unicode
+                    use the <a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals">Unicode
                         escape sequences</a> as characters in identifiers.</p>
 
                 <p>Some examples of legal names are Number_hits, temp99, $credit, and _name.</p>
 
-                <h1>Declaring variables</h1>
+                <h2>Declaring variables</h2>
 
                 <p>You can declare a variable in three ways:</p>
 
@@ -413,11 +438,11 @@
                         local variable. See Variable scope below.</li>
                 </ul>
 
-                <h1>Evaluating variables</h1>
+                <h2>Evaluating variables</h2>
 
                 <p>A variable declared using the var or let statement with no assigned value specified has the value of
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>.</p>
-                <p>An attempt to access an undeclared variable results in a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError">ReferenceError</a>
+                    <a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>.</p>
+                <p>An attempt to access an undeclared variable results in a <a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError">ReferenceError</a>
                     exception being thrown:</p>
 
                 <pre>
@@ -483,8 +508,9 @@
             </pre>
 
             </section>
-
         </div>
+
+        
 
     </main>
 
