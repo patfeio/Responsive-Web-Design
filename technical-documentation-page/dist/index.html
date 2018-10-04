@@ -12,23 +12,23 @@
 
 <body>
 
-    <nav id="navbar">
-
-        <header class="nav-header">
-            <h1>JavaScript Guide</h1>
-        </header>
-
-        <a href="#About_JavaScript" class="nav-link">About JavaScript</a>
-        <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
-        <a href="#ECMAcript" class="nav-link">ECMAcript</a>
-        <a href="#Tools" class="nav-link">Tools</a>
-        <a href="#Hello_World" class="nav-link">Hello World</a>
-        <a href="#Basic_syntax_and_comments" class="nav-link">Basic syntax and comments</a>
-        <a href="#Declarations" class="nav-link nav-link--border-bottom">Declarations</a>
-
-    </nav>
-
     <main id="main-doc">
+
+        <nav id="navbar">
+
+            <header class="nav-header">
+                <h1>JavaScript Guide</h1>
+            </header>
+
+            <a href="#About_JavaScript" class="nav-link">About JavaScript</a>
+            <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+            <a href="#ECMAcript" class="nav-link">ECMAcript</a>
+            <a href="#Tools" class="nav-link">Tools</a>
+            <a href="#Hello_World" class="nav-link">Hello World</a>
+            <a href="#Basic_syntax_and_comments" class="nav-link">Basic syntax and comments</a>
+            <a href="#Declarations" class="nav-link nav-link--border-bottom">Declarations</a>
+
+        </nav>
 
         <div id="sections">
 
@@ -239,21 +239,19 @@
                     JavaScript,
                     and the output appears in the panel above:</p>
 
-                <img src="img/web-console-commandline.png">
+                <img src="img/web-console-commandline.png" alt="placeholder image">
 
                 <p>The console works the exact same way as eval: the last expression entered is returned. For the sake
                     of
                     simplicity, it can be imagined that every time something is entered into the console, it is actual
                     surrounded by console.log around eval like so.</p>
 
-                <pre>
                 <code>
-                        function greetMe(yourName) {
-                            alert('Hello ' + yourName);
-                          }
-                          console.log(eval('3 + 5'));
+                    function greetMe(yourName) {<br>
+                    alert('Hello ' + yourName);<br>
+                    }<br>
+                    console.log(eval('3 + 5'));<br>
                 </code>
-            </pre>
 
                 <h2>Scratchpad</h2>
                 <p>The Web Console is great for executing single lines of JavaScript, but although you can execute
@@ -268,7 +266,7 @@
                     Firefox. It opens in a separate window and is an editor that you can use to write and execute
                     JavaScript in the browser. You can also save scripts to disk and load them from disk.</p>
 
-                <img src="img/scratchpad.png">
+                <img src="img/scratchpad.png" alt="placeholder image">
 
                 <hr class="h-rule">
 
@@ -283,20 +281,18 @@
                 <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
                     JavaScript code:</p>
 
-                <pre>
-                    <code>
-                            (function(){
-                                "use strict";
-                                /* Start of your code */
-                                function greetMe(yourName) {
-                                  alert('Hello ' + yourName);
-                                }
-                                
-                                greetMe('World');
-                                /* End of your code */
-                            })();
-                    </code>
-            </pre>
+                <code>
+                    (function(){<br>
+                    "use strict";<br>
+                    /* Start of your code */<br>
+                    function greetMe(yourName) {<br>
+                    alert('Hello ' + yourName);<br>
+                    }<br>
+
+                    greetMe('World');<br>
+                    /* End of your code */<br>
+                    })();<br>
+                </code>
 
                 <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! In the following
                     pages,
@@ -307,7 +303,7 @@
                     what
                     these mean, but for now they can be thought of as doing the following —</p>
 
-                <ol>
+                <ol class="main-section__list">
                     <li>Massively improve performance</li>
                     <li>Prevent stupid semantics in JavaScript that trip up beginners</li>
                     <li>Prevent code snippets executed in the console from interacting with one-another (e.g. having
@@ -331,11 +327,9 @@
                     the word Früh (which means
                     "early" in German) could be used as a variable name.</p>
 
-                <pre>
-                    <code>
-                            var Früh = "foobar";
-                    </code>
-                </pre>
+                <code>
+                    var Früh = "foobar";
+                </code>
 
                 <p>But, the variable früh is not the same as Früh because JavaScript is case sensitive.</p>
 
@@ -363,17 +357,15 @@
 
                 <p>The syntax of <span>comments</span> is the same as in C++ and in many other languages:</p>
 
-                <pre>
                 <code>
-                        // a one line comment
- 
-                        /* this is a longer, 
-                         * multi-line comment
-                         */
-                         
-                        /* You can't, however, /* nest comments */ SyntaxError */
+                    // a one line comment<br>
+
+                    /* this is a longer,<br>
+                    * multi-line comment<br>
+                    */<br>
+
+                    /* You can't, however, /* nest comments */ SyntaxError */<br>
                 </code>
-            </pre>
 
                 <p>Comments behave like whitespace and are discarded during script execution.</p>
 
@@ -443,67 +435,57 @@
                 <p>An attempt to access an undeclared variable results in a <a class="section-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError">ReferenceError</a>
                     exception being thrown:</p>
 
-                <pre>
                 <code>
-                        var a;
-                        console.log('The value of a is ' + a); // The value of a is undefined
-                            
-                        console.log('The value of b is ' + b); // The value of b is undefined
-                        var b;
-                            
-                        console.log('The value of c is ' + c); // Uncaught ReferenceError: c is not defined
-                            
-                        let x;
-                        console.log('The value of x is ' + x); // The value of x is undefined
-                            
-                        console.log('The value of y is ' + y); // Uncaught ReferenceError: y is not defined
-                         let y;
+                    var a;<br>
+                    console.log('The value of a is ' + a); // The value of a is undefined<br>
+
+                    console.log('The value of b is ' + b); // The value of b is undefined<br>
+                    var b;<br>
+
+                    console.log('The value of c is ' + c); // Uncaught ReferenceError: c is not defined<br>
+
+                    let x;<br>
+                    console.log('The value of x is ' + x); // The value of x is undefined<br>
+
+                    console.log('The value of y is ' + y); // Uncaught ReferenceError: y is not defined<br>
+                    let y;<br>
                 </code>
-            </pre>
 
                 <p>You can use undefined to determine whether a variable has a value. In the following code, the
                     variable
                     input is not assigned a value, and the if statement evaluates to true.</p>
 
-                <pre>
                 <code>
-                        var input;
-                        if (input === undefined) {
-                          doThis();
-                        } else {
-                           doThat();
-                         }
+                    var input;<br>
+                    if (input === undefined) {<br>
+                    doThis();<br>
+                    } else {<br>
+                    doThat();<br>
+                    }<br>
                 </code>
-            </pre>
 
                 <p>The undefined value behaves as false when used in a boolean context. For example, the following code
                     executes the function myFunction because the myArray element is undefined:</p>
 
-                <pre>
                 <code>
-                        var myArray = [];
-                        if (!myArray[0]) myFunction();
+                    var myArray = [];<br>
+                    if (!myArray[0]) myFunction();
                 </code>
-            </pre>
 
                 <p>The undefined value converts to NaN when used in numeric context.</p>
 
-                <pre>
                 <code>
-                        var a;
-                        a + 2;  // Evaluates to NaN
+                    var a;<br>
+                    a + 2; // Evaluates to NaN
                 </code>
-            </pre>
 
                 <p>When you evaluate a null variable, the null value behaves as 0 in numeric contexts and as false in
                     boolean contexts. For example:</p>
 
-                <pre>
                 <code>
-                        var n = null;
-                        console.log(n * 32); // Will log 0 to the console
+                    var n = null;<br>
+                    console.log(n * 32); // Will log 0 to the console
                 </code>
-            </pre>
 
             </section>
         </div>

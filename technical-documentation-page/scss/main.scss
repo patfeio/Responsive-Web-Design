@@ -3,6 +3,7 @@ $fontColor: #1a1a1a;
 $borderColor: rgba(115, 115, 115, 0.6);
 $sectionLinkColor: #002db3;
 $sectionLinkHover: #668cff;
+$codeColor: rgba(0, 0, 0, 0.1);
 $break-small: 480px;
 
 @import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans");
@@ -67,13 +68,18 @@ h1 {
   font-size: 2rem;
 }
 
+#main-doc {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
 #navbar {
   display: flex;
   flex-direction: column;
   position: fixed;
   padding-top: 50px;
-  height: 100%;
-  width: auto;
+  height: 100vh;
   background-color: $backgroundColor;
   border-right: 2px solid $borderColor;
 
@@ -92,43 +98,42 @@ h1 {
 
 .nav-link {
   color: $fontColor;
-  width: 100%;
   padding: 10px 30px;
   border-top: 1px solid $borderColor;
+
+  &:hover {
+    background: $borderColor;
+  }
+
+  &:active {
+    background: $sectionLinkHover;
+  }
 }
 
 .nav-link--border-bottom {
   border-bottom: 1px solid $borderColor;
 }
 
-#main-doc {
-  display: flex;
-  width: 100vw;
-  margin: 0 auto;
-  padding: 0;
-  height: 100%;
-}
-
 #sections {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 50px 60px 50px 70px;
+  padding: 50px 10px 50px 70px;
   margin-left: 250px;
-  flex: auto;
+  flex: 1 1 auto;
 
   @media screen and (max-width: $break-small) {
+
     margin: 0 auto;
     align-self: center;
-    padding: 520px 50px 0 50px;
+    padding: 520px 10px 0 10px;
   }
 }
 
 .main-section__list {
-  margin: 0 200px 0 50px;
+  margin: 20px 50px 20px 50px;
 
   @media screen and (max-width: $break-small) {
     margin: 0 auto;
+    margin: 20px;
   }
 }
 
@@ -137,6 +142,26 @@ h1 {
 
   &:hover {
     color: $sectionLinkHover;
+  }
+}
+
+code {
+  display: block;
+  background: $codeColor;
+  border-radius: 3px;
+  font-size: 0.9em;
+  padding: 10px;
+  max-width: 500px;
+  margin: 30px 0 30px 70px;
+}
+
+img {
+  display: block;
+  width: 55%;
+  margin: 60px auto;
+
+  @media screen and (max-width: $break-small) {
+    width: 70%;
   }
 }
 
