@@ -1,0 +1,19 @@
+{
+  "name": "personal-portfolio-webpage",
+  "version": "1.0.0",
+  "description": "personal portfolio webpage",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "watch": "onchange scss -- npm run scss"
+  },
+  "author": "Patricia Feio",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "onchange": "^5.0.2",
+    "watch": "^1.0.2"
+  }
+}
