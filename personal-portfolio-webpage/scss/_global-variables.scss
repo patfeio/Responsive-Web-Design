@@ -9,7 +9,7 @@
     // Color
 
     //Theme colors
-    --global--primary--Color: #f2f2f2;
+    --global--primary--Color: #fafafa;
     --global--primary--hover--Color: #c80000;
 
     //--global--danger--Color: #c00;
@@ -20,7 +20,8 @@
 
     // Text color
     --global--dark--Color: #0a0a0a;
-    --global--light--Color: #fafafa; // $color-text
+    --global--light--Color: #e1e1e1; // $color-text
+    --global--lighter--Color: #ffffff; // $color-text
 
     // Background color
     --global--light--BackgroundColor: #fafafa;
@@ -49,9 +50,9 @@
 
     // line height
     --global--sm--LineHeight: 1.1;
-    //--global--md--LineHeight: 1.5;
+    --global--md--LineHeight: 1.5;
     //--global--sm--LineHeight: 1.25;
-    --global--md--LineHeight: 1.375;
+    //--global--md--LineHeight: 1.375;
     --global--lg--LineHeight: 2;
 
     // Font weight
