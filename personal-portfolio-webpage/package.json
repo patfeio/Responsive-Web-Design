@@ -4,7 +4,7 @@
   "description": "personal portfolio webpage",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "scss": "node-sass -w scss/ -o dist/css/ --recursive",
     "watch": "onchange scss -- npm run scss"
   },
   "author": "Patricia Feio",

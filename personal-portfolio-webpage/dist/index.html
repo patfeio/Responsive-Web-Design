@@ -5,39 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio of Patricia Feio, Front-End Developer">
+    <meta name="keywords" content="Portfolio, Patricia, Feio, Developer, Front-End, HTML, CSS, Javascript, Webdesign">
+    <meta name="author" content="Patricia Feio">
     <title>Patricia Feio | Front-End Developer</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <div id="navbar">
-        <a class="logo" href="#welcome-section">
-            <img class="" alt="logotype" src="">
-        </a>
+    <div class="wrapper">
 
-        <ul class="navbar-menu-list">
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#profile">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+        <!--  #MENU  -->
+
+        <div class="menu_mobile menu_mobile--overlay">
+
+            <div class="menu_mobile--right">
+                <a href="javascript:void(0)" class="menu_mobile-closebtn" onclick="closeNav()" aria-label="Close mobile menu">&times;</a>
+            </div>
+
+            <ul class="menu_mobile-list">
+                <li><a class="menu_mobile-list-link" href="#welcome-section">HOME</a></li>
+                <li><a class="menu_mobile-list-link" href="#profile">ABOUT</a></li>
+                <li><a class="menu_mobile-list-link" href="#projects">PROJECTS</a></li>
+                <li><a class="menu_mobile-list-link" href="#contact">CONTACT</a></li>
+            </ul>
+
+        </div>
+
+        <div class="menu_mobile-navbar">
+
+            <div class="menu_mobile-navbar--left">
+
+                <a href="#welcome-section">
+                    <img class="logo--white" alt="logotype" src="img/logoWhite.svg">
+                </a>
+            </div>
+
+            <div class="menu_mobile-navbar--right">
+                <span class="menu_mobile-toggler" onclick="openNav()">&#x2630;</span>
+            </div>
+
+        </div>
+
+        <div id="navbar">
+
+            <a class="logo" href="#welcome-section">
+                <img class="logo--white" alt="logotype" src="img/logoWhite.svg">
+            </a>
+
+            <ul class="navbar_menu-list">
+                <li class="navbar_menu-list-item navbar_menu-list--first"><a class="navbar_menu-list-link" href="#profile">About</a></li>
+                <li class="navbar_menu-list-item"><a class="navbar_menu-list-link" href="#projects">Projects</a></li>
+                <li class="navbar_menu-list-item"><a class="navbar_menu-list-link" href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+
+
+        <!--  #WELCOME SECTION  -->
+
+        <div id="welcome-section">
+
+            <div class="welcome_text">
+
+                <h1 class="welcome-text_h1">Hi! I'm Patrícia,</h1>
+
+                <h2 class="welcome-text_h2">a Front-End Developer from Lisbon, Portugal</h2>
+
+                <p class="welcome-text_p"><a class="welcome-text_link" href="#profile">Contact Me</a></p>
+
+            </div>
+
+            <div class="welcome_background">
+
+                <div class="welcome-background_photo">
+                    <img class="welcome-background_photo-img animated fadeOut" src="img/background-photo.png" alt="patricia photo">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--  #PROFILE  -->
+
+        <div id="profile">
+
+            <h2 class="profile_text-h2">About</h2>
+
+            <div class="profile_text-paragraph">
+
+                <p>Apaixonei-me por Front-end Development e UX/UI Design e acredito que é possível conciliar
+                    criatividade e usabilidade na construção de websites funcionais.</p>
+                <br>
+                <p>Actualmente estou disponível para novas oportunidades de trabalho.</p>
+
+            </div>
+
+            <div class="profile_skills">
+
+                <h3 class="space">Skills</h3>
+
+                <p>A minha descoberta do fascinante mundo de Front-end Development e de UX/UI Design fez-me rapidamente
+                    perceber a importância da organização, da dedicação, do professionalismo e do trabalho orientado
+                    para o utilizador no desenvolvimento de produtos que consigam responder às exigências do mundo
+                    actual e às necessidades dos clientes.</p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!--  #PROJECTS  -->
+
+        <div id="projects">
+            <div class="project-tile"></div>
+        </div>
+
+
+        <!--  #CONTACT  -->
+
+        <div id="contact">
+            <a id="profile-link" href="https://github.com/patfeio" target="_blank"></a>
+        </div>
+
     </div>
 
-    <div id="welcome-section">
-        <h1></h1>
-    </div>
-
-    <div id="projects">
-        <div class="project-tile"></div>
-    </div>
-
-    <div id="profile"></div>
-
-    <div id="contact">
-        <a id="profile-link" href="https://github.com/patfeio" target="_blank"></a>
-    </div>
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/init.js"></script>
 
 </body>
 

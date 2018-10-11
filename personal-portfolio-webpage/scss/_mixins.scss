@@ -1,0 +1,29 @@
+// Breakpoint Variables
+
+$bp-small: 425px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-xlarge: 1440px;
+
+
+// Mixins:
+
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint==desktop {
+        @media (min-width: 1200px) {
+            @content ;
+        }
+    }
+
+    @else if $breakpoint==laptop {
+        @media (min-width: 992px) {
+            @content ;
+        }
+    }
+
+    @else if $breakpoint==tablet {
+        @media (min-width: 768px) {
+            @content ;
+        }
+    }
+}
