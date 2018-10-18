@@ -40,6 +40,7 @@ q:after {
 
 a {
   cursor: pointer;
+  color: var(--global--link--Color);
   text-decoration: var(--global--link--TextDecoration);
   transition: var(--global--link--transition);
 }
@@ -530,8 +531,8 @@ body {
   padding-top: 40px;
 
   @include breakpoint(tablet) {
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
   }
 }
 
@@ -548,12 +549,22 @@ body {
 .contact_text {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 
   @include breakpoint(tablet) {
-    width: 100%;
+    width: 50%;
   }
 }
+
+.contact_email {
+  border-bottom: var(--global--BorderWidth) solid var(--global--link--Color);
+}
+
+.contact_email:hover,
+.contact_email:focus {
+  border-bottom: var(--global--BorderWidth) solid var(--global--link--hover-Color);
+}
+
 
 .contact_paragraph--space-down {
   padding-top: 40px;
@@ -589,5 +600,13 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: var(--global--sans-serif--FontFamily);
-  transition: top 0.3s;
+}
+
+.footer_list {
+  margin-left: 32px;
+}
+
+.footer_list-link:hover,
+.footer_list-link:focus {
+  color: var(--global--primary--hover--Color);
 }
