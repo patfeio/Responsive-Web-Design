@@ -1,7 +1,7 @@
 // homepage 
 //intro animation
 
-$(".welcome-text_h1").delay(1000).css({
+$(".welcome__text--h1").delay(1000).css({
     top: -25,
     opacity: 0
 }).animate({
@@ -9,7 +9,7 @@ $(".welcome-text_h1").delay(1000).css({
     opacity: 1
 }, 1200);
 
-$(".welcome-text_h2").delay(2000).css({
+$(".welcome__text--h2").delay(2000).css({
     top: -20,
     opacity: 0
 }).animate({
@@ -17,7 +17,7 @@ $(".welcome-text_h2").delay(2000).css({
     opacity: 1
 }, 1200);
 
-$(".welcome-text_p").delay(3500).css({
+$(".welcome__text--p").delay(3500).css({
     top: 0,
     opacity: 0
 }).animate({

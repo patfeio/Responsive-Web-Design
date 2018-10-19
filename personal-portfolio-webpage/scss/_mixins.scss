@@ -1,3 +1,34 @@
+@mixin h1 {
+    color: var(--color__primary--text--light);
+    font-size: var(--font-size--main-title);
+    font-weight: var(--fontweight--normal);
+    line-height: var(--lineheight--md);
+}
+
+@mixin h2 {
+    color: var(--color__primary--text--light);
+    font-size: var(--font-size--sub-title);
+    font-weight: var(--fontweight--light);
+    line-height: var(--lineheight--md);
+}
+
+@mixin h3 {
+    font-size: 1.375em;
+    line-height: 1.25;
+}
+
+@mixin h4 {
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+@mixin paragraph {
+    font-family: Lato;
+    font-size: 1.125em;
+    line-height: 1.25;
+}
+
 // Breakpoint Variables
 
 $bp-small: 425px;
@@ -5,8 +36,6 @@ $bp-medium: 768px;
 $bp-large: 1024px;
 $bp-xlarge: 1440px;
 
-
-// Mixins:
 
 @mixin breakpoint($breakpoint) {
     @if $breakpoint==desktop {
