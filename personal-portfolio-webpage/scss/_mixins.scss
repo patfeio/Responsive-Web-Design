@@ -1,20 +1,24 @@
 @mixin h1 {
     color: var(--color__primary--text--light);
-    font-size: var(--font-size--main-title);
+    font-size: var(--font-size--main-title); // 32
     font-weight: var(--fontweight--normal);
     line-height: var(--lineheight--md);
 }
 
 @mixin h2 {
     color: var(--color__primary--text--light);
-    font-size: var(--font-size--sub-title);
+    //font-size: var(--font-size--sub-title);
+    font-size: var(--font-size--secondary-title); // 26
     font-weight: var(--fontweight--light);
     line-height: var(--lineheight--md);
 }
 
 @mixin h3 {
-    font-size: 1.375em;
-    line-height: 1.25;
+    color: var(--color__primary--text--light);
+    font-size: var(--font-size--sub-title); // 22
+    font-weight: var(--fontweight--light);
+    line-height: var(--lineheight--md);
+    //line-height: 1.25;
 }
 
 @mixin h4 {
@@ -27,6 +31,13 @@
     font-family: Lato;
     font-size: 1.125em;
     line-height: 1.25;
+}
+
+@mixin text-h2 {
+    color: var(--color__primary--text--light);
+    font-family: var(--fontfamily--sans-serif);
+    font-size: var(--font-size--secondary-title);
+    text-align: center;
 }
 
 // Breakpoint Variables
@@ -55,11 +66,4 @@ $bp-xlarge: 1440px;
             @content ;
         }
     }
-}
-
-@mixin text-h2 {
-    color: var(--global--lighter--Color);
-    font-family: var(--global--sans-serif--FontFamily);
-    font-size: var(--global--secondary--title-FontSize);
-    text-align: center;
 }

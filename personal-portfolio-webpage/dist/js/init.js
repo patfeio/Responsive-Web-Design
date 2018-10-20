@@ -9,7 +9,7 @@ $(".welcome__text--h1").delay(1000).css({
     opacity: 1
 }, 1200);
 
-$(".welcome__text--h2").delay(2000).css({
+$(".welcome__text--h3").delay(2000).css({
     top: -20,
     opacity: 0
 }).animate({
