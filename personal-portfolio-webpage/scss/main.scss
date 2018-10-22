@@ -14,7 +14,7 @@ a {
 body {
     font-family: var(--fontfamily__paragraph--sans-serif);
     font-size: var(--font-size__base);
-    font-weight: var(--fontweight--normal);
+    font-weight: var(--fontweight--regular);
     line-height: var(--lineheight--sm);
     color: var(--color__primary--text--light);
     background-color: var(--color__primary--dark);
@@ -314,6 +314,7 @@ body {
 
     @include breakpoint(tablet) {
         @include h1;
+        font-weight: var(--fontweight--bold);
         padding-top: 100px;
     }
 }
@@ -391,6 +392,7 @@ body {
 
     @include breakpoint(tablet) {
         @include h1;
+        font-weight: var(--fontweight--bold);
         padding-top: 100px;
     }
 }
@@ -483,6 +485,7 @@ body {
 
     @include breakpoint(tablet) {
         @include h1;
+        font-weight: var(--fontweight--bold);
         padding-top: 100px;
     }
 }
@@ -572,6 +575,8 @@ body {
 
 .footer {
     background-color: var(---color__primary--dark);
+    font-family: var(--fontfamily--sans-serif);
+    font-weight: var(--fontweight--light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -598,7 +603,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--fontfamily--sans-serif);
 }
 
 .footer__social--list-link {
