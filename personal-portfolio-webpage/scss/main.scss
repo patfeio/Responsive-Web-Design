@@ -250,7 +250,7 @@ body {
 }
 
 .welcome__text--p {
-    color: var(--color__primary--text--light);
+    color: var(--color__text--lighter);
     font-family: var(--fontfamily__paragraph--sans-serif);
     font-size: var(--font-size--base);
     padding-top: 80px;
@@ -311,7 +311,6 @@ body {
 
 .profile {
     margin: 0 auto 150px auto;
-    padding-top: 100px;
     position: relative;
 
     @include breakpoint(tablet) {
@@ -322,9 +321,15 @@ body {
 .profile__text--h2 {
     @include h2;
     text-align: center;
+    padding-top: 80px;
+
+    @include breakpoint(tablet) {
+        padding-top: 100px;
+    }
 }
 
 .profile__text-paragraph--big {
+    color: var(--color__text--lighter);
     font-size: var(--font-size--base);
     line-height: var(--lineheight--md);
     padding-top: 40px;
@@ -345,7 +350,15 @@ body {
     z-index: 4;
 }
 
-.profile__skills {
+.profile__technical-skills {
+    margin-top: 80px;
+
+    @include breakpoint(tablet) {
+        margin-top: 100px;
+    }
+}
+
+.profile__personal-skills {
     margin-top: 80px;
 
     @include breakpoint(tablet) {
@@ -355,7 +368,14 @@ body {
 
 .profile__skills-list {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(tablet) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .profile__text--h2 {
@@ -375,7 +395,6 @@ body {
 
 .projects {
     margin: 0 auto 150px auto;
-    padding-top: 100px;
     position: relative;
 
     @include breakpoint(tablet) {
@@ -386,6 +405,11 @@ body {
 .projects__text--h2 {
     @include h2;
     text-align: center;
+    padding-top: 80px;
+
+    @include breakpoint(tablet) {
+        padding-top: 100px;
+    }
 }
 
 .projects__list {
@@ -398,7 +422,7 @@ body {
 
 .project-tile {
     background: linear-gradient(0deg, #010101, #1a1a1a, #333333);
-    border: 1px solid rgba(73, 73, 73, 0.5);
+
     margin: 20px;
     height: 210px;
     padding: 0;
@@ -409,7 +433,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: all 1.5s;
+    transition: all 1s;
     transition-delay: 0.5s;
 
     &:hover {
@@ -429,7 +453,7 @@ body {
 }
 
 .project-tile-title {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -441,6 +465,7 @@ body {
     &:hover,
     &:focus {
         opacity: 1;
+        border: 4px solid rgba(73, 73, 73, 0.8);
     }
 }
 
@@ -469,13 +494,17 @@ body {
 
 .contact {
     margin: 0 auto 150px auto;
-    padding-top: 100px;
     position: relative;
 }
 
 .contact__text--h2 {
     @include h2;
     text-align: center;
+    padding-top: 80px;
+
+    @include breakpoint(tablet) {
+        padding-top: 100px;
+    }
 }
 
 .contact__wrapper {
@@ -485,15 +514,21 @@ body {
 
     @include breakpoint(tablet) {
         flex-direction: row;
+        justify-content: center;
     }
 }
 
 .contact__photo {
     width: 100%;
-    margin: 0 auto;
     padding-top: 40px;
 
     @include breakpoint(tablet) {
+        padding-right: 20px;
+        width: 40%;
+        height: 40%;
+    }
+
+    @include breakpoint(laptop) {
         width: 30%;
         height: 30%;
     }
@@ -505,7 +540,8 @@ body {
     width: 100%;
 
     @include breakpoint(tablet) {
-        width: 50%;
+        padding-left: 80px;
+        width: 40%;
     }
 }
 
@@ -529,15 +565,21 @@ body {
 
 .contact__text--paragraph {
     font-size: var(--font-size--base);
-    line-height: var(--lineheight--md);
+    line-height: var(--lineheight--lg);
 }
 
 .contact__text--paragraph-space-bottom {
+    color: var(--color__text--lighter);
     padding-bottom: 40px;
 }
 
-.contact__text--paragraph-border-bottom {
+.contact__text--paragraph--border-bottom {
     border-bottom: 4px solid var(--link__color);
+
+    &:hover,
+    &:focus {
+        border-bottom: 4px solid var(--link__color--hover);
+    }
 }
 
 
@@ -546,29 +588,45 @@ body {
 /*---------- #FOOTER SECTION ----------*/
 
 .footer {
-    background-color: var(--global--dark--BackgroundColor);
+    background-color: var(---color__primary--dark);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     height: 80px;
     position: relative;
-    //width: 90%;
     z-index: 8;
+
+    @include breakpoint(mobile) {
+        justify-content: space-between;
+    }
 }
 
-.footer_social-media {
+.footer__email {
+    color: var(--color__text--lighter);
+}
+
+.footer__social {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--global--sans-serif--FontFamily);
+    font-family: var(--fontfamily--sans-serif);
 }
 
-.footer_list {
+.footer__social--list-link {
     margin-left: 32px;
+    color: var(--color__text--lighter);
+
+    &:hover,
+    &:focus {
+        color: var(--color__primary--hover);
+    }
 }
 
-.footer_list-link:hover,
-.footer_list-link:focus {
-    color: var(--global--primary--hover--Color);
+.no-margin {
+    margin-left: 0;
+
+    @include breakpoint(mobile) {
+        margin-left: 32px;
+    }
 }

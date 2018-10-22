@@ -24,7 +24,7 @@
                 <a href="javascript:void(0)" class="menu__mobile--closebtn" onclick="closeNav()" aria-label="Close mobile menu">&times;</a>
             </div>
 
-            <ul class="menu__mobile-list">
+            <ul class="menu__mobile-list" onclick="closeNav()">
                 <li><a class="menu__mobile-list-link" href="#welcome-section">HOME</a></li>
                 <li><a class="menu__mobile-list-link" href="#profile">ABOUT</a></li>
                 <li><a class="menu__mobile-list-link" href="#projects">PROJECTS</a></li>
@@ -74,7 +74,7 @@
 
                     <h3 class="welcome__text--h3">a Front-End Developer from Lisbon, Portugal</h3>
 
-                    <p class="welcome__text--p"><a class="welcome__text--link" href="#profile">Hire Me</a></p>
+                    <p class="welcome__text--p"><a class="welcome__text--link" href="#contact">Hire Me</a></p>
 
                 </div>
 
@@ -112,9 +112,9 @@
 
                 </p>
 
-                <div class="profile__skills">
+                <div class="profile__technical-skills">
 
-                    <h2 class="profile__text--h2">Skills</h2>
+                    <h2 class="profile__text--h2">Technical Skills</h2>
 
                     <div class="profile__skills-list">
 
@@ -131,7 +131,29 @@
                             <li>VSCode</li>
                             <li>Git</li>
                             <li>Github</li>
-                            <li>Adobe Photoshop</li>
+                            <li>Basic PHP</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="profile__personal-skills">
+
+                    <h2 class="profile__text--h2">Personal Skills</h2>
+
+                    <div class="profile__skills-list">
+
+                        <ul class="profile__skills-list1">
+                            <li>Dedication</li>
+                            <li>Commitment</li>
+                            <li>Communication</li>
+                        </ul>
+
+                        <ul class="profile__skills-list1">
+                            <li>Teamwork</li>
+                            <li>Open-Mindedness</li>
+                            <li>Problem Solving</li>
                         </ul>
 
                     </div>
@@ -210,16 +232,26 @@
                             about my
                             work? Or even talk about a future partnership? Feel free to contact me.</p>
 
-                        <p class="contact__text--paragraph">Write me an email:</p>
-                        <p class="contact__text--paragraph contact__text--paragraph-space-bottom"><a class="email contact__email"
-                                href="mailto:patriciafeio@gmail.com" target="blank">patriciafeio@gmail.com</a></p>
+                        <div>
 
-                        <p class="contact__text--paragraph">You can also find me:</p>
+                            <p class="contact__text--paragraph">Write me an email:</p>
+                            <p class="contact__text--paragraph contact__text--paragraph-space-bottom"><a class="email contact__text--paragraph--border-bottom"
+                                    href="mailto:patriciafeio@gmail.com" target="blank">patriciafeio@gmail.com</a></p>
 
-                        <a id="profile-link" class="contact__text--paragraph contact__text--paragraph-border-bottom"
-                            href="https://github.com/patfeio" target="_blank">Github</a>
-                        <a id="profile-link" class="contact__text--paragraph contact__text--paragraph-border-bottom"
-                            href="https://www.linkedin.com/in/patriciafeio/" target="_blank">LinkedIn</a>
+                            <p class="contact__text--paragraph">You can also find me:</p>
+
+                            <p class="contact__text--paragraph">
+                                <a id="profile-link" class="contact__text--paragraph contact__text--paragraph--border-bottom"
+                                    href="https://github.com/patfeio" target="_blank">Github</a></p>
+                            <p class="contact__text--paragraph">
+                                <a id="profile-link" class="contact__text--paragraph contact__text--paragraph--border-bottom"
+                                    href="https://www.linkedin.com/in/patriciafeio/" target="_blank">LinkedIn</a>
+                            </p>
+                            <p class="contact__text--paragraph">
+                                <a id="profile-link" class="contact__text--paragraph contact__text--paragraph--border-bottom"
+                                    href="https://twitter.com/p_feyo" target="_blank">Twitter</a></p>
+
+                        </div>
 
                     </div>
 
@@ -231,13 +263,13 @@
 
         <div class="footer">
 
-            <p><a class="email" href="mailto:patriciafeio@gmail.com" target="blank">patriciafeio@gmail.com</a></p>
+            <p><a class="footer__email" href="mailto:patriciafeio@gmail.com" target="blank">patriciafeio@gmail.com</a></p>
 
             <!-- social media links -->
-            <ul class="footer_social-media">
-                <li class="footer_list"><a class="footer_list-link" href="https://github.com/patfeio" target="blank">Github</a></li>
-                <li class="footer_list"><a class="footer_list-link" href="https://www.linkedin.com/in/patriciafeio/"
-                        target="blank">LinkedIn</a></li>
+            <ul class="footer__social">
+                <li><a class="footer__social--list-link no-margin" href="https://github.com/patfeio" target="blank">Github</a></li>
+                <li><a class="footer__social--list-link" href="https://www.linkedin.com/in/patriciafeio/" target="blank">LinkedIn</a></li>
+                <li><a class="footer__social--list-link" href="https://twitter.com/p_feyo" target="blank">Twitter</a></li>
             </ul>
 
         </div>
