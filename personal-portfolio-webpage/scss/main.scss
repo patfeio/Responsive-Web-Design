@@ -1,9 +1,8 @@
-@import '_reset';
+@import "_reset";
 
-@import '_global-variables';
+@import "_global-variables";
 
-@import '_mixins';
-
+@import "_mixins";
 
 a {
     cursor: pointer;
@@ -34,9 +33,6 @@ body {
 .section_wrapper {
     position: relative;
 }
-
-
-
 
 /*---------- #MENU ----------*/
 
@@ -93,7 +89,6 @@ body {
     position: absolute;
     right: 45px;
     top: 20px;
-
 }
 
 .menu__mobile-navbar {
@@ -203,9 +198,6 @@ body {
     }
 }
 
-
-
-
 /*---------- #WELCOME SECTION ----------*/
 
 .welcome {
@@ -227,7 +219,6 @@ body {
 }
 
 .welcome__text--h1 {
-
     @include h1;
     padding-top: 210px;
 
@@ -304,9 +295,6 @@ body {
     }
 }
 
-
-
-
 /*---------- #PROFILE SECTION ----------*/
 
 .profile {
@@ -325,6 +313,7 @@ body {
 
     @include breakpoint(tablet) {
         padding-top: 100px;
+        font-size: var(--font-size--hero-title);
     }
 }
 
@@ -387,9 +376,6 @@ body {
     line-height: var(--lineheight--lg);
     padding-top: 40px;
 }
-
-
-
 
 /*---------- #PROJECTS SECTION ----------*/
 
@@ -459,7 +445,7 @@ body {
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: all 0.9s ease;
+    transition: all 0.6s ease;
     transition-delay: 0.5s;
 
     &:hover,
@@ -486,11 +472,7 @@ body {
     position: relative;
 }
 
-
-
-
 /*---------- #CONTACT SECTION ----------*/
-
 
 .contact {
     margin: 0 auto 150px auto;
@@ -515,6 +497,7 @@ body {
     @include breakpoint(tablet) {
         flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 }
 
@@ -557,7 +540,7 @@ body {
 .contact__text--main-paragraph {
     font-size: var(--font-size--base);
     line-height: var(--lineheight--md);
-    padding-top: 40px;
+    //padding-top: 40px;
     padding-bottom: 40px;
     margin: 0 auto;
     z-index: 4;
@@ -582,9 +565,6 @@ body {
     }
 }
 
-
-
-
 /*---------- #FOOTER SECTION ----------*/
 
 .footer {
@@ -603,7 +583,12 @@ body {
 }
 
 .footer__email {
-    color: var(--color__text--lighter);
+    display: none;
+
+    @include breakpoint(mobile) {
+        display: block;
+        color: var(--color__text--lighter);
+    }
 }
 
 .footer__social {
