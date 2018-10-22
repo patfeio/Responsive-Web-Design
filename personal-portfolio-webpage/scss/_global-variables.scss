@@ -1,140 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans');
 
-@function em($px, $base: $base__font-size) {
-    @return ($px / $base) * 1em;
-}
-
-
 :root {
 
     // Color
 
     //Theme colors
-    --color__primary--light: #dedede; // fafafa
+    --color__primary--light: #dedede;
     --color__primary--dark: #0a0a0a;
     --color__primary--hover: #c80000;
-    //--global--primary--Color: #fafafa;
-    //--global--primary--hover--Color: #c80000;
-
-    //--global--danger--Color: #c00;
-    //--global--danger--dark--Color: #a30000;
-
-    //--global--warning--Color: #ec7a08;
-    //--global--warning--dark--Color: #b35c00;
 
     // Text color
     --color__primary--text--light: #dedede;
     --color__primary--text--dark: #0a0a0a;
     --color__text--lighter: #fff;
-    //--global--dark--Color: #0a0a0a;
-    //--global--light--Color: #e1e1e1; // $color-text
-    //--global--lighter--Color: #ffffff; // $color-text
-
-    // Background color
-    //--global--light--BackgroundColor: #fafafa;
-    //--global--dark--BackgroundColor: #0a0a0a; //  $color-primary
-
 
     // Typography
 
     // Font family
     --fontfamily__paragraph--sans-serif: 'Open Sans', -apple-system, 'Helvetica Neue', 'Trebuchet MS', sans-serif;
-    //--global--sans-serif--paragraph--FontFamily: 'Open Sans', -apple-system,"Helvetica Neue","Trebuchet MS",sans-serif;
 
     --fontfamily--sans-serif: 'Josefin Sans', -apple-system, 'Helvetica Neue', 'Trebuchet MS', sans-serif;
-    //--global--sans-serif--FontFamily: 'Josefin Sans',-apple-system,"Helvetica Neue","Trebuchet MS",sans-serif;
 
     // Font size
-    //--global--caption--FontSize: 0.8rem;
-    //--global--body--FontSize: 1rem;
     --font-size--base: 1.125rem; // 18px
-    //--global--body--FontSize: 1.125rem; // 18
-
-    //--global--big--body--FontSize: 1.25rem;
     --font-size--sub-title: 1.375rem; // 22px
-    //--global--sub-title--FontSize: 1.375rem; // 22
-    //--global--secondary--title-FontSize: 1.5rem;
     --font-size--secondary-title: 1.625rem; // 26px
-    //--global--secondary--title-FontSize: 1.625rem; // 26
     --font-size--main-title: 2rem; // 32px
-    //--global--main-title--FontSize: 2rem; // 32
     --font-size--hero-title: 3rem; // 48px
-    //--global--hero-title--FontSize: 3rem; // 48px
     --font-size--big-hero-title: 4rem;
-    //--global--big--hero-title--FontSize: 4rem; // 48px
-
-
 
     // line height
     --lineheight--sm: 1.1;
-    //--global--sm--LineHeight: 1.1;
-
     --lineheight--md: 1.5;
-    //--global--md--LineHeight: 1.5;
-    //--global--sm--LineHeight: 1.25;
-    //--global--md--LineHeight: 1.375;
-
     --lineheight--lg: 2;
-    //--global--lg--LineHeight: 2;
 
     // Font weight
     --fontweight--light: 300;
-    //--global--light--FontWeight: 300;
-
     --fontweight--normal: 400;
-    //--global--normal--FontWeight: 400;
-
     --fontweight--bold: 700;
-    //--global--bold--FontWeight: 700;
-
 
     // Links
     --link__color: #fafafa;
-    //--global--link--Color: var(--global--primary--Color); // branco
-
     --link__text-decoration: none;
-    //--global--link--TextDecoration: none;
-
     --link--transition: color 0.25 ease;
-    //--global--link--transition: color 0.25 ease;
-
     --link__color--hover: #c80000;
-    //--global--link--hover-Color: var(--global--primary--hover--Color); // vermelho
-
     --link__text-decoration--hover: underline;
-    //--global--link--hover--TextDecoration: underline;
-
     --link__color--focus: #fafafa;
-    //--global--link--focus-Color: var(--global--primary--Color);
-
-    // Borders
-    // --global--BorderWidth: 4px;
-    //--global--dark--BorderColor: #bbb;
-    //--global--light--BorderColor: #d1d1d1;                                                                                           
-
-    // spacers
-    // https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
-    //--global--spacer--xxs: 0.125rem;
-    //  --global--spacer--xxs: 0.625rem;
-    //--global--spacer--xs: 0.25rem;
-    //  --global--spacer--xs: 1.25rem;
-    //--global--spacer--sm: 0.5rem;
-    //--global--spacer--sm: 0.5rem;
-    //  --global--spacer--sm: 1.875rem; // 30
-    //  --global--spacer--md: 1rem;
-    //--global--spacer--lg: 2rem;
-    //  --global--spacer--lg: 2.5rem; // 40
-    //--global--spacer--xl: 3rem;
-    //  --global--spacer--xl: 3.75rem;
-
-
-
-    // Breakpoint
-    // http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
-    /*--global--breakpoint--xs: 0;
-    --global--breakpoint--sm: 24em;
-    --global--breakpoint--md: 50;
-    --global--breakpoint--lg: 50em;
-    --global--breakpoint--xl: 73em;*/
 
 }

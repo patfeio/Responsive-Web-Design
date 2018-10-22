@@ -308,12 +308,13 @@ body {
 
 .profile__text--h2 {
     @include h2;
+    font-size: var(--font-size--secondary-title);
     text-align: center;
     padding-top: 80px;
 
     @include breakpoint(tablet) {
+        @include h1;
         padding-top: 100px;
-        font-size: var(--font-size--hero-title);
     }
 }
 
@@ -367,11 +368,6 @@ body {
     }
 }
 
-.profile__text--h2 {
-    @include h2;
-    text-align: center;
-}
-
 .profile__skills-list1 {
     line-height: var(--lineheight--lg);
     padding-top: 40px;
@@ -394,6 +390,7 @@ body {
     padding-top: 80px;
 
     @include breakpoint(tablet) {
+        @include h1;
         padding-top: 100px;
     }
 }
@@ -485,6 +482,7 @@ body {
     padding-top: 80px;
 
     @include breakpoint(tablet) {
+        @include h1;
         padding-top: 100px;
     }
 }
@@ -507,11 +505,17 @@ body {
 
     @include breakpoint(tablet) {
         padding-right: 20px;
+        width: 50%;
+        height: 50%;
+    }
+
+    @include breakpoint(laptop) {
+        padding-right: 20px;
         width: 40%;
         height: 40%;
     }
 
-    @include breakpoint(laptop) {
+    @include breakpoint(desktop) {
         width: 30%;
         height: 30%;
     }
@@ -540,7 +544,6 @@ body {
 .contact__text--main-paragraph {
     font-size: var(--font-size--base);
     line-height: var(--lineheight--md);
-    //padding-top: 40px;
     padding-bottom: 40px;
     margin: 0 auto;
     z-index: 4;

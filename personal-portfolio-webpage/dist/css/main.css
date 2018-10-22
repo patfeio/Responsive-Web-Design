@@ -155,12 +155,7 @@ table {
   --link--transition: color 0.25 ease;
   --link__color--hover: #c80000;
   --link__text-decoration--hover: underline;
-  --link__color--focus: #fafafa;
-  /*--global--breakpoint--xs: 0;
-    --global--breakpoint--sm: 24em;
-    --global--breakpoint--md: 50;
-    --global--breakpoint--lg: 50em;
-    --global--breakpoint--xl: 73em;*/ }
+  --link__color--focus: #fafafa; }
 
 a {
   cursor: pointer;
@@ -414,12 +409,16 @@ body {
   font-size: var(--font-size--secondary-title);
   font-weight: var(--fontweight--light);
   line-height: var(--lineheight--md);
+  font-size: var(--font-size--secondary-title);
   text-align: center;
   padding-top: 80px; }
   @media (min-width: 768px) {
     .profile__text--h2 {
-      padding-top: 100px;
-      font-size: var(--font-size--hero-title); } }
+      color: var(--color__text--lighter);
+      font-size: var(--font-size--main-title);
+      font-weight: var(--fontweight--normal);
+      line-height: var(--lineheight--md);
+      padding-top: 100px; } }
 
 .profile__text-paragraph--big {
   color: var(--color__text--lighter);
@@ -462,13 +461,6 @@ body {
       flex-direction: row;
       justify-content: space-around; } }
 
-.profile__text--h2 {
-  color: var(--color__text--lighter);
-  font-size: var(--font-size--secondary-title);
-  font-weight: var(--fontweight--light);
-  line-height: var(--lineheight--md);
-  text-align: center; }
-
 .profile__skills-list1 {
   line-height: var(--lineheight--lg);
   padding-top: 40px; }
@@ -490,6 +482,10 @@ body {
   padding-top: 80px; }
   @media (min-width: 768px) {
     .projects__text--h2 {
+      color: var(--color__text--lighter);
+      font-size: var(--font-size--main-title);
+      font-weight: var(--fontweight--normal);
+      line-height: var(--lineheight--md);
       padding-top: 100px; } }
 
 .projects__list {
@@ -566,6 +562,10 @@ body {
   padding-top: 80px; }
   @media (min-width: 768px) {
     .contact__text--h2 {
+      color: var(--color__text--lighter);
+      font-size: var(--font-size--main-title);
+      font-weight: var(--fontweight--normal);
+      line-height: var(--lineheight--md);
       padding-top: 100px; } }
 
 .contact__wrapper {
@@ -584,9 +584,14 @@ body {
   @media (min-width: 768px) {
     .contact__photo {
       padding-right: 20px;
+      width: 50%;
+      height: 50%; } }
+  @media (min-width: 992px) {
+    .contact__photo {
+      padding-right: 20px;
       width: 40%;
       height: 40%; } }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .contact__photo {
       width: 30%;
       height: 30%; } }
