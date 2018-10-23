@@ -4,4 +4,4 @@ freeCodeCamp - Responsive Web Design projects and certification
 ![responsive web design certification](responsiveWebDesign_certification.JPG)
 
 
-<a href="https://www.freecodecamp.org/certification/patfeio/responsive-web-design" target="_blank">Responsive Web design Certification</a>
+<a href="https://www.freecodecamp.org/certification/patfeio/responsive-web-design" target="blank">Responsive Web design Certification</a>
