@@ -636,6 +636,10 @@ body {
   padding-top: 40px;
 }
 
+.profile__skills-list1--padding {
+  padding-left: 20px;
+}
+
 /*---------- #PROJECTS SECTION ----------*/
 .projects {
   margin: 0 auto 150px auto;
