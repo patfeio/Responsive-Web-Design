@@ -306,7 +306,7 @@ body {
     }
 }
 
-.profile__text--h2 {
+.profile__text--h1 {
     @include h2;
     font-size: var(--font-size--secondary-title);
     text-align: center;
@@ -315,6 +315,17 @@ body {
     @include breakpoint(tablet) {
         @include h1;
         font-weight: var(--fontweight--bold);
+        padding-top: 100px;
+    }
+}
+
+.profile__text--h2 {
+    @include h2;
+    font-size: var(--font-size--secondary-title);
+    text-align: center;
+    padding-top: 80px;
+
+    @include breakpoint(tablet) {
         padding-top: 100px;
     }
 }
@@ -385,7 +396,7 @@ body {
     }
 }
 
-.projects__text--h2 {
+.projects__text--h1 {
     @include h2;
     text-align: center;
     padding-top: 80px;
@@ -478,7 +489,7 @@ body {
     position: relative;
 }
 
-.contact__text--h2 {
+.contact__text--h1 {
     @include h2;
     text-align: center;
     padding-top: 80px;
