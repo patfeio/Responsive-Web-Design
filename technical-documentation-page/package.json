@@ -10,6 +10,7 @@
   "author": "Patricia Feio",
   "license": "MIT",
   "dependencies": {
+    "merge": "^1.2.1",
     "node-sass": "^4.9.3"
   },
   "devDependencies": {
