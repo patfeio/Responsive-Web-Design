@@ -11,10 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "merge": "^1.2.1",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.14.1"
   },
   "devDependencies": {
-    "onchange": "^5.0.2",
+    "onchange": "^5.2.0",
     "watch": "^1.0.2"
   }
 }
